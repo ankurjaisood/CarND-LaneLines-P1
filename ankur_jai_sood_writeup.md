@@ -1,27 +1,11 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Finding Lane Lines on the Road**
-
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
-
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[grayscale]: ./examples/grayscale.jpg "Grayscale"
+[result_video]: ./test_videos_output/solidYellowLeft.mp4 "Result"
 
----
-
-### Reflection
-
-### 1. The pipeline
+## 1. The pipeline
 
 For this project the goal was to create a pipeline that detects the lane markings on the road from a video feed.
 My pipeline did this through the following steps:
@@ -32,15 +16,29 @@ My pipeline did this through the following steps:
 - Perform a hough transform to find the lines within the region of interest
 - Draw the lines and overlay them over the original image
 
+### Convert to Grayscale
+
+![Grayscale result][grayscale]
+
+### Gaussian Blur
+
+### Edge Detection
+
+### Region of Interest
+
+### Hough Transform 
+
+### Overlay Over Original
+
+### Video Result
+![Video showcasing result of pipeline][result_video]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
 
 
-### 2. Shortcomings with the current pipeline
+
+## 2. Shortcomings with the current pipeline
 
 
 One potential shortcoming would be what would happen when ... 
@@ -48,7 +46,7 @@ One potential shortcoming would be what would happen when ...
 Another shortcoming could be ...
 
 
-### 3. Possible improvements to the pipeline
+## 3. Possible improvements to the pipeline
 
 A possible improvement would be to ...
 
