@@ -22,31 +22,37 @@ My pipeline did this through the following steps:
 - Perform a hough transform to find the lines within the region of interest
 - Draw the lines and overlay them over the original image
 
-### Convert to Grayscale
+### Converting Frame to Grayscale
 Colour images consist of three channels: red, blue, and green. The first step in the pipeline is to convert the image to grayscale by taking the average of the three channels colour intensity at each pixel.
 This allows us to process the image further, reduces the image size, and hence improves pipeline performance.
 
 | ![Original image][original] | ![Grayscale result][grayscale] |
+|:---:|:---:|
 
-### Gaussian Blur
+### Performing Gaussian Blur
 
 | ![Grayscale result][grayscale] | ![Gaussian result][gaussian] |
+|:---:|:---:|
 
-### Edge Detection
+### Canny Edge Detection
 
 | ![Gaussian result][gaussian] | ![Canny image][canny] |
+|:---:|:---:|
 
-### Region of Interest
+### Creating a Region of Interest
 
 | ![Canny image][canny] | ![ROI image][roi] |
+|:---:|:---:|
 
-### Hough Transform
+### Finding Lines using Hough Transform
 
 | ![ROI image][roi] | ![Hough image][hough] |
+|:---:|:---:|
 
 ### Overlay Over Original
 
 | ![Hough image][hough] | ![Result image][result_image] |
+|:---:|:---:|
 
 ### Video Result
 ![Video showcasing result of pipeline][result_video]
