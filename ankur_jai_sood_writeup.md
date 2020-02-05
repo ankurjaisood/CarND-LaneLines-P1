@@ -2,7 +2,13 @@
 
 [//]: # (Image References)
 
-[grayscale]: ./examples/grayscale.jpg "Grayscale"
+[original]: ./test_images/solidWhiteCurve.jpg "Original"
+[grayscale]: ./examples/solidWhiteCurve_grayscale.jpg "Grayscale"
+[gaussian]: ./examples/solidWhiteCurve_gaussian.jpg "Gaussian"
+[canny]: ./examples/solidWhiteCurve_canny.jpg "Canny"
+[roi]: ./examples/solidWhiteCurve_ROI.jpg "ROI"
+[hough]: ./examples/solidWhiteCurve_hough.jpg "Hough"
+[result_image]: ./test_images_output/solidWhiteCurve.jpg "Result"
 [result_video]: ./examples/result.gif "Result"
 
 ## 1. The pipeline
@@ -17,18 +23,36 @@ My pipeline did this through the following steps:
 - Draw the lines and overlay them over the original image
 
 ### Convert to Grayscale
+Colour images consist of three channels: red, blue, and green. The first step in the pipeline is to convert the image to grayscale by taking the average of the three channels colour intensity at each pixel.
+This allows us to process the image further, reduces the image size, and hence improves pipeline performance.
 
+![Original image][orignal]
 ![Grayscale result][grayscale]
 
 ### Gaussian Blur
 
+![Grayscale result][grayscale]
+![Gaussian result][gaussian]
+
 ### Edge Detection
+
+![Gaussian result][gaussian]
+![Canny image][canny]
 
 ### Region of Interest
 
-### Hough Transform 
+![Canny image][canny]
+![ROI image][roi]
+
+### Hough Transform
+
+![ROI image][roi] 
+![Hough image][hough]
 
 ### Overlay Over Original
+
+![Hough image][hough]
+![Result image][result_image]
 
 ### Video Result
 ![Video showcasing result of pipeline][result_video]
