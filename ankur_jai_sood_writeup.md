@@ -3,7 +3,7 @@
 [//]: # (Image References)
 
 [grayscale]: ./examples/grayscale.jpg "Grayscale"
-[result_video]: ./test_videos_output/solidYellowLeft.mp4 "Result"
+[result_video]: ./examples/result.gif "Result"
 
 ## 1. The pipeline
 
