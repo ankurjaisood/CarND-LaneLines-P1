@@ -76,7 +76,7 @@ python-engineio==3.0.0
 python-socketio==3.1.2
 pytz==2019.3
 PyWavelets==1.1.1
-pywin32==225
+pywin32==301
 pywinpty==0.5.7
 pyzmq==18.1.1
 qtconsole==4.6.0
